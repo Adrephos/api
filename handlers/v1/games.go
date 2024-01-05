@@ -46,7 +46,7 @@ func getURL(c *gin.Context) (string, error) {
 		return "", errors.New("No cover found")
 	}
 
-	return "https://" + coverURL, nil
+	return "https:" + coverURL, nil
 }
 
 func GetCover(c *gin.Context) {
