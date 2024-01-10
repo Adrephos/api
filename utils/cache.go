@@ -15,7 +15,7 @@ var cache *gc.Cache
 
 func GetCache() *gc.Cache {
 	if cache == nil {
-		cache = gc.New(30 * time.Minute, time.Minute)
+		cache = gc.New(24 * time.Hour, time.Minute)
 	}
 	return cache
 }
