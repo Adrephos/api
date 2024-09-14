@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func getField(res *http.Response, field string, c *gin.Context) (interface{}, error, int) {
+func getField(res *http.Response, field string, _ *gin.Context) (interface{}, error, int) {
 	var arr []map[string]interface{}
 	err := json.NewDecoder(res.Body).Decode(&arr)
 	if err != nil {
