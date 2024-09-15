@@ -1,0 +1,4 @@
+runtime: go122  # or another supported version
+env_variables:
+          TWITCH_CLIENT_ID: "your_client_id"
+          TWITCH_SECRET: "your_secret"
